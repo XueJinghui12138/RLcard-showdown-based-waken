@@ -1,8 +1,14 @@
 ## Rule of WaKen
 
-![](C:\Users\29731\AppData\Roaming\marktext\images\2022-10-11-10-15-52-image.png)
+- 卡牌从大到小的顺序为:3,2,A,K,Q,J,10,9,8,7,6,5,4；
+- 游戏使用去除大小王的一副扑克牌，共52张，每个玩家发16张牌，剩余4张牌将公开发给地主；
+- 可出牌型有：
+  - 单张如5，对子如55，三头如555，四头如5555，均为以大压小；
+  - 连牌，4至K中三张以上序列为连牌，例如456，9 10 JQK，跟牌必须出同等牌数，以大压小，如6789压过4567
+  - 可以出连对，如445566；可以出三连对，如555666777；可以出四连对，如777788889999；跟牌必须出同等牌数，以大压小。
+- 地主率先出牌，若地主先于两名农民率先出完所有手牌则地主胜，反之农民胜
 
-# Installation
+## Installation
 
 RLCard-Showdown has separated frontend and backend. The frontend is built with React and the backend is based on Django and Flask.
 
