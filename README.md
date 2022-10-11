@@ -1,10 +1,14 @@
+## Rule of WaKen
+
+![](C:\Users\29731\AppData\Roaming\marktext\images\2022-10-11-10-15-52-image.png)
+
 # Installation
 
 RLCard-Showdown has separated frontend and backend. The frontend is built with React and the backend is based on Django and Flask.
 
 ### Prerequisite
 
-To set up the frontend, you should make sure you have [Node.js](https://nodejs.org/) and NPM installed. Normally you just need to manually install Node.js, and the NPM package would be automatically installed together with Node.js for you. Please refer to its official website for installation of Node.js.
+To set up the frontend, you should make sure you have [Node.js](https://nodejs.org/) and NPM installed. Normally you just need to manually install Node.js, and the NPM package would be automatically installed together with Node.js for you. Please refer to its official website for installation of Node.js.（node -v v13.9.0   npm -v 6.13.7）
 
 You can run the following commands to verify the installation
 
@@ -42,20 +46,21 @@ cd ..
    cd server
    python3 manage.py runserver
    ```
+
 2. 
 
 In a new terminal, start the PvE server (i.e., human vs AI) of DouZero with
 
 ```
 cd pve_server
-python3 run_douzero.py
+python run_douzero.py
 ```
 
-Alternatively, you can start the PvE server interfaced with RLCard:
+Alternatively, you can start the server using artificial rules:
 
 ```
 cd pve_server
-python3 run_dmc.py
+python run_mywaken.py
 ```
 
 They are conceptually the same with minor differences in state representation and training time of the pre-trained models (DouZero is fully trained with more than a month, while DMC in RLCard is only trained for hours).
@@ -66,26 +71,24 @@ They are conceptually the same with minor differences in state representation an
    npm start
    ```
    
-   You can view leaderboard at [http://127.0.0.1:3000/](http://127.0.0.1:3000/) and PvE demo of Dou Dizhu at [http://127.0.0.1:3000/pve/doudizhu-demo](http://127.0.0.1:3000/pve/doudizhu-demo). The backend of leaderboard will run in [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The PvE backend will run in [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
-
-## Demos
-
-![leaderboards](https://github.com/datamllab/rlcard-showdown/blob/master/docs/imgs/leaderboards.png?raw=true)
-![upload](https://github.com/datamllab/rlcard-showdown/blob/master/docs/imgs/upload.png?raw=true)
-![doudizhu-replay](https://github.com/datamllab/rlcard-showdown/blob/master/docs/imgs/doudizhu-replay.png?raw=true)
-![leduc-replay](https://github.com/datamllab/rlcard-showdown/blob/master/docs/imgs/leduc-replay.png?raw=true)
+   You can view PvE demo of Dou Dizhu at [http://127.0.0.1:3000/pve/doudizhu-demo](http://127.0.0.1:3000/pve/doudizhu-demo). 
 
 ## RLCard Showdown
 
 This is the GUI support for the [RLCard](https://github.com/datamllab/rlcard) project and [DouZero](https://github.com/kwai/DouZero) project. RLCard-Showdown provides evaluation and visualization tools to help understand the performance of the agents. It includes a replay module, where you can analyze the replays, and a PvE module, where you can play with the AI interactively. Currently, we only support Leduc Hold'em and Dou Dizhu. The frontend is developed with [React](https://reactjs.org/). The backend is based on [Django](https://www.djangoproject.com/) and [Flask](https://flask.palletsprojects.com/). Have fun!
 
 - Official Website: [http://www.rlcard.org](http://www.rlcard.org)
+
 - Tutorial in Jupyter Notebook: [GitHub - datamllab/rlcard-tutorial: Python and R tutorial for RLCard in Jupyter Notebook](https://github.com/datamllab/rlcard-tutorial)
+
 - Paper: https://www.ijcai.org/Proceedings/2020/764
+
 - Document: [Click Here](docs/README.md)
+
 - Online Demo with DouZero: [https://www.douzero.org/](https://www.douzero.org/)RLCard Showdown
   
   This is the GUI support for the [RLCard](https://github.com/datamllab/rlcard) project and [DouZero](https://github.com/kwai/DouZero) project. RLCard-Showdown provides evaluation and visualization tools to help understand the performance of the agents. It includes a replay module, where you can analyze the replays, and a PvE module, where you can play with the AI interactively. Currently, we only support Leduc Hold'em and Dou Dizhu. The frontend is developed with [React](https://reactjs.org/). The backend is based on [Django](https://www.djangoproject.com/) and [Flask](https://flask.palletsprojects.com/). Have fun!
+  
   - Official Website: [http://www.rlcard.org](http://www.rlcard.org)
   - Tutorial in Jupyter Notebook: [GitHub - datamllab/rlcard-tutorial: Python and R tutorial for RLCard in Jupyter Notebook](https://github.com/datamllab/rlcard-tutorial)
   - Paper: [RLCard: A Platform for Reinforcement Learning in Card Games | IJCAI](https://www.ijcai.org/Proceedings/2020/764)
